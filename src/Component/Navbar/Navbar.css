@@ -1,0 +1,53 @@
+.navbar-background {
+  height: 10vh;
+  z-index: 100;
+}
+
+.nav-link {
+  color: rgb(0, 7, 109);
+  font-size: large;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgb(155, 0, 0);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.nav-logo {
+  height: 8vh;
+}
+
+.nav-heading {
+  color: #ffffff;
+  font-family: "kallisto", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+#navbarSupportedContent.navbar-collapse.navbar-e.collapse.show {
+  backdrop-filter: blur(23px);
+  color: black;
+}
+
+.navbar-background {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-background.scrolled {
+  background-color: #ffffff;
+  /* Your desired background color when scrolled */
+}

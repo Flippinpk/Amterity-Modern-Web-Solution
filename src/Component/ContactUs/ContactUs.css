@@ -1,0 +1,140 @@
+.contact-container {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #2c3e50, #003a79);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info,
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 40%;
+    min-width: 300px;
+   
+  }
+  
+  .contact-info h3,
+  .contact-form h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.3s;
+  }
+  
+  .info-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-right: 15px;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .form-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+  }
+  
+  .form-group input:focus + label,
+  .form-group textarea:focus + label,
+  .form-group input:not(:placeholder-shown) + label,
+  .form-group textarea:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 8px;
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #ffffff;
+  }
+  
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background: #007bff;
+  }
+  
+  .map-container {
+    margin-top: 50px;
+  }
+  
+  .map-container iframe {
+    width: 80%;
+    height: 300px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info,
+    .contact-form {
+      width: 80%;
+    }
+  
+    .map-container iframe {
+      width: 90%;
+    }
+  }
+  

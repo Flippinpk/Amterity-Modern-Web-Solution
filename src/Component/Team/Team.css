@@ -1,0 +1,255 @@
+
+
+.team {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2px;
+}
+
+.team h2 {
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+}
+
+.team-member {
+  flex: 0 1 calc(35% - 20px);
+  max-width: 420px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.team-member:hover {
+  transform: scale(1.10);
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 0;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 2rem;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.team-member p {
+  font-size: 1.5rem;
+  color: #777;
+  margin-bottom: 10px;
+
+}
+
+.team-member .contacts-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #333;
+  border-top: 2px solid #0056b3;
+  padding-top: 0px;
+}
+
+.team-member .contacts-info a {
+  text-decoration: underline;
+  color: #0056b3;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.contacts-info{
+  margin-top: 5vh;
+}
+
+.team-member .more-button {
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 0px;
+  transition: background-color 0.3s;
+  margin-top: -20px;
+}
+
+.team-member .more-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .team-members {
+    gap: 15px;
+  }
+
+  .team-member {
+    flex: 1 1 calc(45% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    width: 100%;
+  }
+
+  .team-member {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    flex: 1 1 100%;
+  }
+
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .team-member h3 {
+    font-size: 1.2rem;
+  }
+
+  .team-member p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* General Styling */
+
+
+.founders-section .banner {
+  /* background: linear-gradient(135deg, #00838f, #00838f); */
+  color: rgb(9, 20, 90);
+  text-align: center;
+}
+
+.founders-section .banner h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 900;
+
+}
+
+/* Tab Navigation */
+.tab-navigation {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tab-button.active {
+  color: #007bff;
+  font-weight: 900;
+  font-size: 2.8rem;
+}
+
+.tab-button:hover {
+  color: #495057;
+}
+
+.active-tab-indicator {
+  position: absolute;
+  bottom: 0;
+  width: 33.33%;
+  height: 4px;
+  background: #007bff;
+  transition: left 0.3s ease;
+}
+
+
+
+.more-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: white;
+  background: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+  background: #0056b3;
+}
+
+.contacts-info {
+  padding: 10px;
+}
+
+.contacts-info .email {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacts-info .email:hover {
+  color: #0056b3;
+}
+
+/* Animation for Fade-in Effect */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

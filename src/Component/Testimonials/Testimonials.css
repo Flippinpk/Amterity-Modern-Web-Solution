@@ -1,0 +1,151 @@
+.testimonials-section {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  background-color: #eee;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #007bff;
+  ;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: rgba(1, 14, 70, 0.925);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  width: 60%;
+  /* height: 60vh; */
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Image */
+.testimonial-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.testimonial-content p {
+  font-size: 1.1rem;
+  color: #eee;
+  margin-bottom: 15px;
+}
+
+/* Author Info */
+.testimonial-author h3 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.testimonial-author p {
+  font-size: 1rem;
+  color: #007bff;
+}
+
+/* Arrows */
+.arrow-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.arrow-button:hover {
+  color: #007bff;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 0;
+}
+
+.right-arrow {
+  position: absolute;
+  right: 0;
+}
+
+/* Indicators */
+.indicator-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #7774ff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator-dot.active {
+  background: #007bff;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+  .testimonial-card {
+    padding: 30px;
+  }
+  .testimonial-content p {
+    font-size: 1rem;
+  }
+  .arrow-button {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 40px 10px;
+  }
+  .testimonial-card {
+    padding: 20px;
+    height: 60vh;
+  }
+  .testimonial-content p {
+    font-size: 0.9rem;
+  }
+  .indicator-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
